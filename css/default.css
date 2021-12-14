@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.options {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 15px;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}

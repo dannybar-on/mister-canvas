@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mister Canvas</title>
+    <link rel="stylesheet" href="css/default.css" />
+  </head>
+  <body onload="onInit()">
+    <canvas id="canvas"></canvas>
+    <div class="options">
+      <input type="color" class="bg-color" onchange="onSelectBackgroundColor(event)">
+      <input type="color" class="fill-color" onchange="onSelectFillColor(event)">
+      <select class="shapes" onchange="onSelectShape(event)">
+        <option value="0">Squares</option>
+        <option value="1">Circles</option>
+        <option value="2">Grid</option>
+        <option value="3">Text</option>
+      </select>
+      <a href="#" onclick="onDownloadCanvas(this)">Download</a>
+      <button onclick="onClearCanvas()">Clear</button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
